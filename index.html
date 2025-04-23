@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -23,11 +24,8 @@
 
         <!-- Lado esquerdo -->
         <div class="d-flex align-items-center gap-2">
-            <img class="rounded img-default position-absolute top-0 start-5 my-1" width="90" alt="Logo normal"
-                src="https://img.freepik.com/vetores-gratis/lampada-realista-isolada_1284-41741.jpg?t=st=1745380123~exp=1745383723~hmac=a6fba315094501a3beb1f657fd65e893d15aa5e06682177c0ed601146a785551&w=740" />
-
-            <img class="rounded img-hover position-absolute top-0 start-5 my-1" width="90" alt="Logo hover"
-                src="https://img.freepik.com/vetores-gratis/lampada-iluminada-realista-isolada_1284-41774.jpg?t=st=1745380159~exp=1745383759~hmac=a517b40cd3e4b1255e8696c9f2e7b28b9094487b8a82a116ffd73fab4d1ce12a&w=740" />
+            <img class="rounded-circle" width="97" alt="Logo"
+                src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDNudzFhNDhqMHBvODNmdDBicnkyeXd0NjVpeTh5anBvcXFraGc0dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bGgsc5mWoryfgKBx1u/giphy.gif" />
         </div>
 
         <!-- Texto central -->
@@ -114,25 +112,78 @@
     </div>
 
     <div class="card m-5 fade-in">
-        <h2>Projetos</h2>
+        <h2 class="mb-5">Projetos</h2>
 
-        <div class="row col-12">
-            <div>
-                <p>Estamos trabalahndo para atualizar esta página com os projetos</p>
+        <div class="row gx-4 gy-4"> <!-- adiciona espaçamento entre colunas e linhas -->
+            <div class="col-md-6">
+                <div class="card card_projetos p-3">
+                    <div class="header">
+                        <img class="rounded" width="97" alt="Logo"
+                            src="https://img.freepik.com/fotos-gratis/icone-de-relogio-de-calendario-roxo-conceito-de-notificacao-de-lembrete-3d-website-ui-no-fundo-roxo-ilustracao-de-renderizacao-3d_56104-1317.jpg?t=st=1745419842~exp=1745423442~hmac=67b66c943d90281e3109b53ad1079c75b68515775ae7f745ca3acd91bd8f682e&w=826" />
+                        <h3>Cadastro de tarefas</h3>
+                    </div>
+                    <p class="mt-2">Um sistema de cadastro de tarefas que está dividido em:</p>
+                    <dl class="lista_detalhes_projeto">
+                        <dt>Cadastro de tarefas</dt>
+                        <dd>Sistema para gerenciar tarefas</dd>
 
+                        <dt>Cadastro de usuários</dt>
+                        <dd>Permite o gerenciamento de contas</dd>
+
+                        <dt>Autenticação</dt>
+                        <dd>Sistema de autenticação de usuário</dd>
+                    </dl>
+
+                    <p class="mt-2">Back-End e Front-End</p>
+
+                    <dl class="lista_detalhes_projeto">
+                        <dt>Back-End</dt>
+                        <dd>* Api de autenticação</dd>
+
+                        <p>
+                            A Api esta dividida em camadas.<br>Para uma maior segurança dados sensíveis como login e
+                            senha para autenticar no banco de dados foram inseridos em variáveis de ambiente
+                            para evitar que ficassem expostos diretamente no código, juntamente com a chave secreta
+                            que é utilizada na criptografia
+                            dos tokens JWT.<br>Foi criado uma paginação padrão para as listas.<br>Foi implementado
+                            também testes unitários para as classes de entidades.<br>DOWNLOAD <a href="https://github.com/FernandoEwald2/Desafio_Api/archive/refs/heads/main.zip" download>
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </a>
+                        </p>
+
+                        <dt>Front-End</dt>
+                    </dl>
+                </div>
             </div>
-            <div class="col-1">
-                <img class="rounded" src="https://i.poweredtemplates.com/i/cl/00/510/ppt_animation_332.gif" width="84"
-                    height="56" alt="Homens Trabalhando">
 
+            <div class="col-md-6">
+                <div class="card card_projetos p-3">
+                    <img class="rounded mb-2" src="https://i.poweredtemplates.com/i/cl/00/510/ppt_animation_332.gif"
+                        width="84" height="56" alt="Homens Trabalhando">
+                    <p>Estamos trabalhando para atualizar esta página com os projetos</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card_projetos p-3">
+                    <img class="rounded mb-2" src="https://i.poweredtemplates.com/i/cl/00/510/ppt_animation_332.gif"
+                        width="84" height="56" alt="Homens Trabalhando">
+                    <p>Estamos trabalhando para atualizar esta página com os projetos</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card_projetos p-3">
+                    <img class="rounded mb-2" src="https://i.poweredtemplates.com/i/cl/00/510/ppt_animation_332.gif"
+                        width="84" height="56" alt="Homens Trabalhando">
+                    <p>Estamos trabalhando para atualizar esta página com os projetos</p>
+                </div>
             </div>
         </div>
     </div>
+
     <div class="card m-5 col-4 fade-in">
         <h2>Contato</h2>
 
         <div class="row col-12">
-
             <p>Email: fernando@localinfo.com.br</p>
             <p>Telefone: (27) 9 9686-0286</p>
         </div>

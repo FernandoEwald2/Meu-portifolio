@@ -1,14 +1,14 @@
-body{
-    width: 100%;
-    height: 100vh;
-    background-image: url("fundo_sobre.gif");
+body {
+  width: 100%;
+  height: 100vh;
+  background-image: url("fundo_sobre.gif");
 }
 h1 {
   font-family: "Trebuchet MS", sans-serif;
 }
 .fundo {
   width: 100%;
-  height: 100vh; 
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -29,99 +29,129 @@ h1 {
 }
 
 @keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #888;
-    }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #888;
+  }
 }
 
 ul {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 li {
-    list-style: none;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 0.15em solid #888;
-    width: 0;
-    font-family: monospace;
-    opacity: 0;
+  list-style: none;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid #888;
+  width: 0;
+  font-family: monospace;
+  opacity: 0;
 }
 
 .typewriter-1 {
-    animation: typing 3s steps(60, end) forwards, blink-caret .75s step-end infinite;
-    animation-delay: 0s;
+  animation: typing 3s steps(60, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  animation-delay: 0s;
 }
 
 .typewriter-2 {
-    animation: typing 3s steps(60, end) forwards, blink-caret .75s step-end infinite;
-    animation-delay: 2s;
+  animation: typing 3s steps(60, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  animation-delay: 2s;
 }
 
 .typewriter-3 {
-    animation: typing 3s steps(60, end) forwards, blink-caret .75s step-end infinite;
-    animation-delay: 4s;
+  animation: typing 3s steps(60, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  animation-delay: 4s;
 }
 
 .typewriter-4 {
-    animation: typing 3s steps(60, end) forwards, blink-caret .75s step-end infinite;
-    animation-delay: 6s;
+  animation: typing 3s steps(60, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  animation-delay: 6s;
 }
 
 .typewriter-5 {
-    animation: typing 3s steps(60, end) forwards, blink-caret .75s step-end infinite;
-    animation-delay: 8s;
+  animation: typing 3s steps(60, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  animation-delay: 8s;
 }
 
-/* Exibe o li apenas durante ou após a animação */
 li[class^="typewriter"] {
-    animation-fill-mode: forwards;
-    opacity: 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
 }
 
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 2s forwards;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .neon-text {
-    color: rgb(0, 68, 255);
-    text-shadow:
-        0 0 5px #0ff,
-        0 0 10px #0ff,
-        0 0 20px #0ff,
-        0 0 40px #0ff;
+  color: rgb(0, 68, 255);
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 40px #0ff;
 }
 
 .img-hover {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    pointer-events: none; /* Evita interferência com o hover */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none; /* Evita interferência com o hover */
+}
+
+.img-default:hover + .img-hover {
+  opacity: 1;
+}
+
+.img-default:hover {
+  opacity: 0;
+}
+.card_projetos {
+    background-color: rgb(2, 43, 71);
+    padding: 1rem;
   }
   
-  .img-default:hover + .img-hover {
-    opacity: 1;
+  .card_projetos p, h3 {
+    color: white;
   }
   
-  .img-default:hover {
-    opacity: 0;
+  .lista_detalhes_projeto {
+    list-style: none;
+    margin-left: 20px;
+    color: white;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: flex-start; /* Alinha à esquerda */
+  }
+  
+  .header img {
+    margin-right: 10px; /* Espaço entre a imagem e o título */
+  }
+  
+  .header h3 {
+    margin: 0; /* Remove a margem padrão do h3 */
+    color: white;
   }
   
