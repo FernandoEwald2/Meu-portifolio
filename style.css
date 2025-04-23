@@ -1,0 +1,25 @@
+h1{
+    font-family: 'Trebuchet MS', sans-serif; 
+}
+.fundo {
+    width: 100%;
+    height: 100vh;
+    background-image: url("fundo_sobre.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: rgba(163, 161, 161, 0.92);
+    color: rgb(10, 10, 10);
+    padding: 40px;
+    border-radius: 16px;  
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    line-height: 1.6;
+    text-align: left;
+  }
