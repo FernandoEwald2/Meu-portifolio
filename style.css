@@ -110,3 +110,18 @@ li[class^="typewriter"] {
         0 0 20px #0ff,
         0 0 40px #0ff;
 }
+
+.img-hover {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Evita interferência com o hover */
+  }
+  
+  .img-default:hover + .img-hover {
+    opacity: 1;
+  }
+  
+  .img-default:hover {
+    opacity: 0;
+  }
+  
