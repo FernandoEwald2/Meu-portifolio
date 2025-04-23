@@ -3,12 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Meu Portifólio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="logo.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<title>Portfólio | Fernando Ewald</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfólio pessoal de Fernando Ewald, desenvolvedor de software com foco em C#, .NET, Angular, PostgreSQL e soluções em nuvem com AWS.">
+<meta name="author" content="Fernando Ewald">
+<meta name="robots" content="index, follow">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="logo.ico">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Estilo customizado -->
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -117,7 +128,7 @@
     <div class="card m-5 fade-in">
         <h2 class="mb-5">Projetos</h2>
 
-        <div class="row gx-4 gy-4"> <!-- adiciona espaçamento entre colunas e linhas -->
+        <div class="row gx-4 gy-4">
             <div class="col-md-6">
                 <div class="card card_projetos p-3">
                     <div class="header">
@@ -141,6 +152,7 @@
 
                     <dl class="lista_detalhes_projeto">
                         <dt>Back-End</dt>
+                        <p>Desenvolvida com .Net Core</p>
                         <dd>* Api de autenticação</dd>
 
                         <p>
@@ -149,23 +161,47 @@
                             para evitar que ficassem expostos diretamente no código, juntamente com a chave secreta
                             que é utilizada na criptografia
                             dos tokens JWT.<br>Foi criado uma paginação padrão para as listas.<br>Foi implementado
-                            também testes unitários para as classes de entidades.<br>DOWNLOAD <a href="https://github.com/FernandoEwald2/Desafio_Api/archive/refs/heads/main.zip" download>
+                            também testes unitários para as classes de entidades.<br>DOWNLOAD <a
+                                href="https://github.com/FernandoEwald2/Desafio_Api/archive/refs/heads/main.zip"
+                                download>
                                 <i class="fa fa-download" aria-hidden="true"></i>
                             </a>
                         </p>
 
                         <dt>Front-End</dt>
+                        <p>Foi criado para ser minimamente responsivo.
+                            <br>Construído em Angular
+                        </p>
                         <dd>* Segurança reqsuisição</dd>
+                        <p>
+                            A senha não é passaada em forma de texto livre, é tratada antes da requisição
+
+                            <br>DOWNLOAD <a
+                                href="https://github.com/FernandoEwald2/Desafio/archive/refs/heads/master.zip" download>
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </a>
+                        </p>
                     </dl>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <div class="card card_projetos p-3">
-                    <img class="rounded mb-2" src="https://i.poweredtemplates.com/i/cl/00/510/ppt_animation_332.gif"
-                        width="84" height="56" alt="Homens Trabalhando">
-                    <p>Estamos trabalhando para atualizar esta página com os projetos</p>
+                    <div class="header">
+                        <img class="rounded" width="95" alt="Logo"
+                            src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-abstrato-de-aplicativo-de-rotina-para-criancas-aplicativo-para-dispositivos-moveis-de-rotina-para-criancas-aplicativo-para-recem-nascidos-software-de-hora-de-dormir-da-crianca-solucao-de-programacao-para-criancas-rastreamento-de-atividades_335657-3503.jpg?t=st=1745442710~exp=1745446310~hmac=6097344329ad1b05401eaa3ebd0f5764dc80b6eaec127fd08988083dc602709a&w=740" />
+                        <h3>Portifólio</h3>
+                    </div>
+                    <p class="mt-2">Um sistema de cadastro de tarefas que está dividido em:</p>
+                    <p>Apenas uma página estática para expor alguns dos meu projhetos e servir como um portifólio.
+                        <br> Se esse modelo te interessou, fique a vontade para baixar e utilizar como base.
+                        <br>DOWNLOAD <a
+                                href="https://github.com/FernandoEwald2/Meu-portifolio/archive/refs/heads/main.zip" download>
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </a>
+                    </p>
                 </div>
+
             </div>
             <div class="col-md-6">
                 <div class="card card_projetos p-3">
@@ -192,10 +228,6 @@
             <p>Telefone: (27) 9 9686-0286</p>
         </div>
     </div>
-
-
-
-
 </body>
 
 </html>
