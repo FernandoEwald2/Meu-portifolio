@@ -100,6 +100,9 @@ li[class^="typewriter"] {
   opacity: 0;
   animation: fadeIn 2s forwards;
 }
+.fade-in h3{
+    color: black;
+}
 
 @keyframes fadeIn {
   to {
